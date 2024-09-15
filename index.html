@@ -13,14 +13,14 @@
 </head>
 <body class="h-full w-full" style='font-family: "Poppins", sans-serif;'>
     <div id="main-container" class="h-screen flex flex-col">
-        <header class="border-b-[1px] border-b-[#DEDEDE] h-[80px] flex items-center justify-between px-5" id="header-div">
+        <header class="border-b-[1px] border-b-[#DEDEDE] h-[80px] flex items-center justify-between px-5 py-5" id="header-div">
             <img src="/logo.jpg" alt="Cash Logo" class="w-[85px] h-[45px]">
             <div class="flex items-center gap-6">
                 <ul class="flex items-center gap-6">
-                    <a href="#product" class="font-semibold text-[13px]"><li class="text-[#22343D]">Product</li></a>
-                    <a href="#customers" class="text-[13px]"><li class="text-[#22343D]">Customers</li></a>
-                    <a href="#pricing" class="text-[13px]"><li class="text-[#22343D]">Pricing</li></a>
-                    <a href="#resources" class="text-[13px]"><li class="text-[#22343D]">Resources</li></a>
+                    <a href="#product" class="font-semibold text-[14px]"><li class="text-[#22343D]">Product</li></a>
+                    <a href="#customers" class="text-[14px]"><li class="text-[#22343D]">Customers</li></a>
+                    <a href="#pricing" class="text-[14px]"><li class="text-[#22343D]">Pricing</li></a>
+                    <a href="#resources" class="text-[14px]"><li class="text-[#22343D]">Resources</li></a>
                     <button class="border border-[#BCD0E5] w-[110px] h-[43px] text-[#173A56] text-[14px] rounded-[3px] font-semibold">Sign In</button>
                     <button class="bg-[#02897A] w-[100px] h-[43px] text-[14px] text-[white] rounded-[3px] font-semibold">Sign Up</button>
                 </ul>
@@ -31,21 +31,136 @@
 
         <main class="flex-1">
             <!--The First Div-->
-            <div id="first_div" class="grid grid-cols-2 w-[80%] m-auto">
-                <div>
-                    <h1 class="text-[60px] font-bold leading-normal">Work at the speed of thought</h1>
-                    <p class="text-[15px]">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+            <div id="first_div" class="grid grid-cols-2 w-[1200px] m-auto items-center gap-5 mt-10">
+                <div class="flex flex-col gap-5">
+                    <h1 class="text-[60px] font-bold leading-normal text-[#22343D]">Work at the speed of thought</h1>
+                    <h2 class="text-[16px] leading-relaxed text-[#22343D]">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</h2>
                     <div class="flex items-center gap-3">
-                        <button class="bg-[#02897A] font-bold text-white text-[14px] px-5 py-3 rounded-[3px]">Get started</button>
-                        <img src="/play.svg" alt="Play" class="w-[25px] h-[25px]"/>
-                        <a class="text-[#02897A] text-[14px] font-medium underline">Watch the video</a>
+                        <button class="bg-[#02897A] font-bold text-white text-[16px] px-5 py-3 rounded-[3px]">Get started</button>
+                        <img src="/play.svg" alt="Play" class="w-[25px] h-[25px] ml-7"/>
+                        <a class="text-[#02897A] text-[16px] font-medium underline">Watch the video</a>
                     </div>
                 </div>
                 <img src="/img1.svg" alt="Image" class="w-[100%] h-[100%]" />
             </div>
+
+            <img src="/bg.svg" alt="Background Image" class="absolute bottom-[-550px] w-full" />
+            <div class="w-[1200px] m-auto flex flex-col mt-[150px] gap-10" id="second_div">
+                <h3 class="text-[40px] font-bold leading-normal text-center text-[#22343D]">Product was Build Specifically for You</h3>
+                <div class="flex items-center justify-center gap-[10%] mt-10 relative">
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-[#02897A] w-[50px] h-[50px] flex justify-center items-center rounded-[18px] shadow-lg mb-3">
+                            <img src="/icon1.svg" alt="Image" class="w-[20px] h-[20px]" />
+                        </div>
+                        <h4 class="text-[20px] font-bold text-[#22343D]">First click tests</h4>
+                        <h5 class="text-[#22343D] text-[16px] leading-relaxed">While most people enjoy casino gambling.</h5>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-[#4D8DFF] w-[50px] h-[50px] flex justify-center items-center rounded-[18px] shadow-lg mb-3">
+                            <img src="/icon2.svg" alt="Image" class="w-[20px] h-[20px]" />
+                        </div>
+                        <h4 class="text-[20px] font-bold text-[#22343D]">Design surveys</h4>
+                        <h5 class="text-[#22343D] text-[16px]">Sports betting, lottery and bingo playing for the fun.</h5>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-[#740A76] w-[50px] h-[50px] flex justify-center items-center rounded-[18px] shadow-lg mb-3">
+                            <img src="/icon3.svg" alt="Image" class="w-[20px] h-[20px]" />
+                        </div>
+                        <h4 class="text-[20px] font-bold text-[#22343D]">Preference tests</h4>
+                        <h5 class="text-[#22343D] text-[16px]">The Myspace page defines the individual.</h5>
+                    </div>
+
+                    <div class="flex flex-col gap-2">
+                        <div class="bg-[#F03E3D] w-[50px] h-[50px] flex justify-center items-center rounded-[18px] shadow-lg mb-3">
+                            <img src="/icon4.svg" alt="Image" class="w-[20px] h-[20px]" />
+                        </div>
+                        <h4 class="text-[20px] font-bold text-[#22343D]">Find second tests</h4>
+                        <h5 class="text-[#22343D] text-[16px]">Personal choices and the overall personality of the person.</h5>
+                    </div>
+                </div>
+                <button class="bg-[#02897A] font-bold text-white text-[16px] px-5 py-3 rounded-[3px] z-20 w-fit m-auto mt-10">SIGN UP NOW</button>
+            </div>
+
+            <div id="third_div" class="w-[1200px] m-auto grid grid-cols-2 mt-[200px] gap-[10%] items-center">
+                <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3">
+                        <h5 class="text-[18px] font-semibold">Effortless Validation for</h5>
+                        <h6 class="text-[30px] font-bold">Management</h6>
+                    </div>
+                    <h5 class="text-[#22343D] text-[16px] leading-relaxed">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </h5>
+                    <div class="flex flex-col gap-1">
+                        <h5 class="text-[18px] font-semibold">Accessory makers</h5>
+                        <h5 class="text-[16px] leading-relaxed">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.</h5>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h5 class="text-[18px] font-semibold">Alterationists</h5>
+                        <h5 class="text-[16px] leading-relaxed">If you are looking for a new way to promote your business that won’t cost you more money.</h5>
+                    </div>
+                </div>
+                <img src="/img2.svg" alt="Image" class="w-full h-full" />
+            </div>
+
+            <div id="fourth_div" class="w-[1200px] m-auto grid grid-cols-2 mt-[150px] gap-[10%] items-center">
+                <img src="/img3.svg" alt="Image" class="w-full h-full" />
+                <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3">
+                        <h5 class="text-[18px] font-semibold">Easier decision making for</h5>
+                        <h6 class="text-[30px] font-bold">Customer Support</h6>
+                    </div>
+                    <h5 class="text-[#22343D] text-[16px] leading-relaxed">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </h5>
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2">
+                            <img src="/icon7.svg" alt="Icon" class="w-[25px] h-[25px]"/>
+                            <h5 class="text-[16px] leading-relaxed">Never worry about overpaying for your energy again.</h5>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="/icon6.svg" alt="Icon" class="w-[25px] h-[25px]"/>
+                            <h5 class="text-[16px] leading-relaxed">We will only switch you to energy companies that we trust and will treat you right.</h5>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <img src="/icon5.svg" alt="Icon" class="w-[25px] h-[25px]"/>
+                            <h5 class="text-[16px] leading-relaxed">We track the markets daily and know where the savings are.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fifth_div" class="w-[1200px] m-auto grid grid-cols-2 mt-[180px] gap-[10%] items-center">
+                <div class="flex flex-col gap-5">
+                    <div class="flex flex-col gap-3">
+                        <h5 class="text-[18px] font-semibold">Optimisation for</h5>
+                        <h6 class="text-[30px] font-bold">Collaborative</h6>
+                    </div>
+                    <h5 class="text-[#22343D] text-[16px] leading-relaxed">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. </h5>
+                    <div class="flex flex-col gap-1">
+                        <h5 class="text-[18px] font-semibold">Accessory makers</h5>
+                        <h5 class="text-[16px] leading-relaxed">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun.</h5>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h5 class="text-[18px] font-semibold">Alterationists</h5>
+                        <h5 class="text-[16px] leading-relaxed">If you are looking for a new way to promote your business that won’t cost you more money.</h5>
+                    </div>
+                </div>
+                <img src="/img4.svg" alt="Image" class="w-full h-full" />
+            </div>
+
+            <div id="sixth_div" class="w-[1200px] m-auto mt-[200px]">
+                <div>
+                    <h3 class="text-[40px] font-bold leading-normal text-center text-[#22343D]">Quick & Easy Process</h3>
+                    <h5 class="text-[16px] leading-relaxed mt-5 text-center w-[600px] m-auto">Do you require some help for your project: Conception workshop,
+                        prototyping, marketing strategy, landing page, Ux/UI?</h5>
+                </div>
+                <div>
+
+                </div>
+                <button class="block bg-[#02897A] font-bold text-white text-[16px] px-5 py-3 rounded-[3px] z-20 w-fit m-auto mt-10">Contact our expert</button>
+            </div>
+
         </main>
 
-        <footer class="border-t-[1px] border-t-[#DEDEDE] relative py-10 px-5">
+        <footer class="border-t-[1px] border-t-[#DEDEDE] relative py-10 px-5 mt-[250px]">
             <div class="flex items-center justify-between" id="footer-div">
 
                 <div>
@@ -58,8 +173,8 @@
                 </div>
 
                 <div class="flex flex-col">
-                    <h5 class="font-semibold text-[15px] text-[#22343D]">Resource</h5>
-                    <ul class="text-[13px] text-[#22343D] flex flex-col gap-2 mt-4">
+                    <h5 class="font-semibold text-[18px] text-[#22343D]">Resource</h5>
+                    <ul class="text-[14px] text-[#22343D] flex flex-col gap-2 mt-4">
                         <li>About Us</li>
                         <li>Blog</li>
                         <li>Contact</li>
@@ -68,8 +183,8 @@
                 </div>
 
                 <div class="flex flex-col">
-                    <h5 class="font-semibold text-[15px] text-[#22343D]">Legal Stuff</h5>
-                    <ul class="text-[13px] text-[#22343D] flex flex-col gap-2 mt-4">
+                    <h5 class="font-semibold text-[18px] text-[#22343D]">Legal Stuff</h5>
+                    <ul class="text-[14px] text-[#22343D] flex flex-col gap-2 mt-4">
                         <li>Disclaimer</li>
                         <li>Financing</li>
                         <li>Privacy Policy</li>
@@ -78,14 +193,14 @@
                 </div>
 
                 <div class="flex flex-col gap-3">
-                    <h6 class="text-[#22343D] text-[15px] font-semibold mb-3 leading-relaxed">Knowing you're always on the best<span class="block">energy deal!</span></h6>
-                    <input type="text" class="w-[300px] h-[45px] border border-[#BCD0E5] block shadow-md px-2">
-                    <button class="w-[130px] h-[35px] bg-[#02897A] text-white font-semibold block text-[13px]">Sign Up</button>
+                    <h6 class="text-[#22343D] text-[18px] font-semibold mb-3 leading-relaxed">Knowing you're always on the best<span class="block">energy deal!</span></h6>
+                    <input type="text" class="w-[300px] h-[45px] border border-[#BCD0E5] block shadow-md px-2 rounded-[3px]">
+                    <button class="w-[130px] h-[35px] bg-[#02897A] text-white font-semibold block text-[14px] rounded-[3px]">Sign Up</button>
                 </div>
 
             </div>
 
-            <p class="text-[13px] text-center mt-10 text-[#22343D]">Made With Love By Figmaland. All Rights Reserved</p>
+            <p class="text-[14px] text-center mt-10 text-[#22343D]">Made With Love By Figmaland. All Rights Reserved</p>
         </footer>
     </div>
 </body>
