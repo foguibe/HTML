@@ -6,25 +6,40 @@
     <title>Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/styles.css">
-
+    <script src="/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="h-full w-full" style='font-family: "Poppins", sans-serif;'>
     <div id="main-container" class="h-screen flex flex-col">
-        <header class="border-b-[1px] border-b-[#DEDEDE] h-[80px] flex items-center justify-between px-5 py-5" id="header-div">
-            <img src="/logo.jpg" alt="Cash Logo" class="w-[85px] h-[45px]">
-            <div class="flex items-center gap-6">
-                <ul class="flex items-center gap-6">
-                    <a href="#product" class="font-semibold text-[14px]"><li class="text-[#22343D]">Product</li></a>
-                    <a href="#customers" class="text-[14px]"><li class="text-[#22343D]">Customers</li></a>
-                    <a href="#pricing" class="text-[14px]"><li class="text-[#22343D]">Pricing</li></a>
-                    <a href="#resources" class="text-[14px]"><li class="text-[#22343D]">Resources</li></a>
+        
+        <header class="border-b-[1px] border-b-[#DEDEDE] h-[80px] flex items-center justify-between px-5 py-5 relative" id="header-div">
+            <img src="/menu.svg" alt="menu icon" class="absolute right-8 hidden cursor-pointer" id="menu">
+
+            <div id="sidebar" class="bg-white border border-gray-300 p-16 rounded-[2px] fixed top-16 right-10 hidden z-30">
+                <img src="/mode.jpg" alt="Dark mode" class="w-[24px] h-[24px] absolute top-5 right-5 cursor-pointer">
+                <ul class="flex flex-col items-center gap-6 ">
+                    <a href="#product" class="font-semibold text-[14px] hover:font-semibold"><li class="text-[#22343D]">Product</li></a>
+                    <a href="#customers" class="text-[14px] hover:font-semibold"><li class="text-[#22343D]">Customers</li></a>
+                    <a href="#pricing" class="text-[14px] hover:font-semibold"><li class="text-[#22343D]">Pricing</li></a>
+                    <a href="#resources" class="text-[14px] hover:font-semibold"><li class="text-[#22343D]">Resources</li></a>
                     <button class="border border-[#BCD0E5] w-[110px] h-[43px] text-[#173A56] text-[14px] rounded-[3px] font-semibold">Sign In</button>
                     <button class="bg-[#02897A] w-[100px] h-[43px] text-[14px] text-[white] rounded-[3px] font-semibold">Sign Up</button>
                 </ul>
-                <img src="/mode.jpg" alt="Dark mode" class="w-[24px] h-[24px]">
+            </div>
+
+            <img src="/logo.jpg" alt="Cash Logo" class="w-[85px] h-[45px]">
+            <div class="flex items-center gap-6" id="topbar">
+                <ul class="flex items-center gap-6">
+                    <a href="#product" class="font-semibold text-[14px] hover:font-semibold"><li class="text-[#22343D]">Product</li></a>
+                    <a href="#customers" class="text-[14px] hover:font-semibold"><li class="text-[#22343D]">Customers</li></a>
+                    <a href="#pricing" class="text-[14px] hover:font-semibold"><li class="text-[#22343D]">Pricing</li></a>
+                    <a href="#resources" class="text-[14px] hover:font-semibold"><li class="text-[#22343D]">Resources</li></a>
+                    <button class="border border-[#BCD0E5] w-[110px] h-[43px] text-[#173A56] text-[14px] rounded-[3px] font-semibold">Sign In</button>
+                    <button class="bg-[#02897A] w-[100px] h-[43px] text-[14px] text-[white] rounded-[3px] font-semibold">Sign Up</button>
+                </ul>
+                <img src="/mode.jpg" alt="Dark mode" class="w-[24px] h-[24px] cursor-pointer">
             </div>
 
         </header>
@@ -35,10 +50,12 @@
                 <div class="flex flex-col gap-5">
                     <h1 class="text-[60px] font-bold leading-normal text-[#22343D]">Work at the speed of thought</h1>
                     <h2 class="text-[16px] leading-relaxed text-[#22343D]">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</h2>
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-3" id="fsd">
                         <button class="bg-[#02897A] font-bold text-white text-[16px] px-5 py-3 rounded-[3px]">Get started</button>
-                        <img src="/play.svg" alt="Play" class="w-[25px] h-[25px] ml-7"/>
-                        <a class="text-[#02897A] text-[16px] font-medium underline">Watch the video</a>
+                        <div class="flex items-center gap-3">
+                            <img src="/play.svg" alt="Play" class="w-[25px] h-[25px] ml-7"/>
+                            <a class="text-[#02897A] text-[16px] font-medium underline">Watch the video</a>
+                        </div>
                     </div>
                 </div>
                 <img src="/img1.svg" alt="Image" class="w-[100%] h-[100%]" />
@@ -47,7 +64,7 @@
             <img src="/bg.svg" alt="Background Image" class="absolute bottom-[-550px] w-full" />
             <div class="w-[90%] max-w-[1200px] m-auto flex flex-col mt-[150px] gap-10" id="second_div">
                 <h3 class="text-[40px] font-bold leading-normal text-center text-[#22343D]">Product was Build Specifically for You</h3>
-                <div class="flex items-center justify-center gap-[5%] mt-10 relative">
+                <div class="grid grid-cols-4 items-center justify-center gap-[5%] mt-10 relative">
                     <div class="flex flex-col gap-2">
                         <div class="bg-[#02897A] w-[50px] h-[50px] flex justify-center items-center rounded-[18px] shadow-lg mb-3">
                             <img src="/icon1.svg" alt="Image" class="w-[20px] h-[20px]" />
