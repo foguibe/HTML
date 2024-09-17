@@ -143,7 +143,29 @@ p, h1, h2, h3, h4, h5, h6 {
   #second_div > div {
     margin-top: 20px !important;
   }
+
+  #third_div, #fourth_div, #fifth_div {
+    grid-template-columns: 1fr !important;
+  }
+
+  #third_div > div {
+    order: 2;
+  }
+
+  #third_div > img {
+    order: 1;
+  }
+
+  h6 {
+    font-size: 25px !important;
+  }
+
+  #third_div h5, h6 {
+    text-align: justify !important;
+  }
+
 }
+
 
 @media (max-width: 460px) {
   #first_div h1 {

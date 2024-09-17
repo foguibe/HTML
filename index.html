@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="h-full w-full" style='font-family: "Poppins", sans-serif;'>
-    <div id="main-container" class="h-screen flex flex-col">
+<body class="h-full w-full overflow-x-hidden" style='font-family: "Poppins", sans-serif;'>
+    <div id="main-container" class="h-screen flex flex-col overflow-x-hidden">
         
         <header class="border-b-[1px] border-b-[#DEDEDE] h-[80px] flex items-center justify-between px-5 py-5 relative" id="header-div">
             <img src="/menu.svg" alt="menu icon" class="absolute right-8 hidden cursor-pointer" id="menu">
@@ -61,8 +61,8 @@
                 <img src="/img1.svg" alt="Image" class="w-[100%] h-[100%]" />
             </div>
 
-            <div class="w-[100%] max-w-[1200px] m-auto flex flex-col mt-[150px] gap-10 relative" id="second_div">
-                <img src="/bg.svg" alt="Background Image" class="absolute bottom-[-80px] left-0 w-screen -ml-[50vw] translate-x-[50%]" />
+            <div class="w-[100%] px-[6%] m-auto flex flex-col mt-[200px] gap-10 relative" id="second_div">
+                <img src="/bg.svg" alt="Background Image" class="absolute bottom-[-80px] left-0 right-0 mx-auto w-screen" />
                 <h3 class="text-[40px] font-bold leading-normal text-center text-[#22343D] w-[90%] m-auto">Product was Build Specifically for You</h3>
                 <div class="grid grid-cols-4 items-center justify-center gap-[5%] mt-10 relative w-[90%] m-auto">
                     <div class="flex flex-col gap-2">
@@ -100,7 +100,7 @@
                 <button class="bg-[#02897A] font-bold text-white text-[16px] px-5 py-3 rounded-[3px] z-20 w-fit m-auto mt-10">SIGN UP NOW</button>
             </div>
 
-            <div id="third_div" class="w-[90%] max-w-[1200px] m-auto grid grid-cols-2 mt-[230px] gap-[10%] items-center">
+            <div id="third_div" class="w-[90%] max-w-[1200px] m-auto grid grid-cols-2 mt-[200px] gap-[10%] items-center">
                 <div class="flex flex-col gap-5">
                     <div class="flex flex-col gap-3">
                         <h5 class="text-[18px] font-semibold">Effortless Validation for</h5>
@@ -119,7 +119,7 @@
                 <img src="/img2.svg" alt="Image" class="w-full h-full" />
             </div>
 
-            <div id="fourth_div" class="w-[90%] max-w-[1200px] m-auto grid grid-cols-2 mt-[150px] gap-[10%] items-center">
+            <div id="fourth_div" class="w-[90%] max-w-[1200px] m-auto grid grid-cols-2 mt-[200px] gap-[10%] items-center">
                 <img src="/img3.svg" alt="Image" class="w-full h-full" />
                 <div class="flex flex-col gap-5">
                     <div class="flex flex-col gap-3">
@@ -127,7 +127,7 @@
                         <h6 class="text-[30px] font-bold">Customer Support</h6>
                     </div>
                     <h5 class="text-[#22343D] text-[16px] leading-relaxed">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </h5>
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4" id="tdd">
                         <div class="flex items-center gap-2">
                             <img src="/icon7.svg" alt="Icon" class="w-[25px] h-[25px]"/>
                             <h5 class="text-[16px] leading-relaxed">Never worry about overpaying for your energy again.</h5>
@@ -144,7 +144,7 @@
                 </div>
             </div>
 
-            <div id="fifth_div" class="w-[90%] max-w-[1200px] m-auto grid grid-cols-2 mt-[180px] gap-[10%] items-center">
+            <div id="fifth_div" class="w-[90%] max-w-[1200px] m-auto grid grid-cols-2 mt-[200px] gap-[10%] items-center">
                 <div class="flex flex-col gap-5">
                     <div class="flex flex-col gap-3">
                         <h5 class="text-[18px] font-semibold">Optimisation for</h5>
@@ -163,32 +163,32 @@
                 <img src="/img4.svg" alt="Image" class="w-full h-full" />
             </div>
 
-            <img src="/bg1.svg" alt="Background Image" class="w-full absolute top-[3370px]">
-            <div id="sixth_div" class="w-[90%] max-w-[1200px] m-auto mt-[200px] z-20 relative">
-                <div>
+            <div id="sixth_div" class="w-full px-[6%] m-auto mt-[200px] relative">
+                <img src="/bg1.svg" alt="Background Image" class="absolute top-[-100px] left-0 right-0 mx-auto w-screen z-0" />
+                <div class="relative z-20">
                     <h3 class="text-[40px] font-bold leading-normal text-center text-[#22343D]">Quick & Easy Process</h3>
-                    <h5 class="text-[16px] leading-loose mt-3 text-center w-[90%] max-w-[600px] m-auto">Do you require some help for your project: Conception workshop,
-                        prototyping, marketing strategy, landing page, Ux/UI?</h5>
+                    <h5 class="text-[16px] leading-loose mt-3 text-center w-[90%] max-w-[600px] m-auto">Do you require some help for your project: Conception workshop, prototyping, marketing strategy, landing page, Ux/UI?</h5>
                 </div>
-                <div class="grid grid-cols-2 gap-y-5 mt-10">
-                    <div class="flex items-center gap-3 m-auto ">
-                        <img src="/avatar1.png" alt="Avatar" class="w-[80px] h-[80px]">
-                        <p class="shadow-md py-2 px-5 rounded-[20px] text-[15px] bg-white">I can take care of your pitch</p>
+                <div class="grid grid-cols-2 gap-y-5 mt-10 relative z-20">
+                    <div class="flex items-center gap-3 m-auto">
+                    <img src="/avatar1.png" alt="Avatar" class="w-[80px] h-[80px]">
+                    <p class="shadow-md py-2 px-5 rounded-[20px] text-[15px] bg-white relative z-20">I can take care of your pitch</p>
                     </div>
                     <div class="flex items-center gap-3 m-auto">
-                        <img src="/avatar2.svg" alt="Avatar" class="w-[80px] h-[80px]">
-                        <p class="shadow-md py-2 px-5 rounded-[20px] text-[15px] bg-white">I can prototype your app</p>
+                    <img src="/avatar2.svg" alt="Avatar" class="w-[80px] h-[80px]">
+                    <p class="shadow-md py-2 px-5 rounded-[20px] text-[15px] bg-white">I can prototype your app</p>
                     </div>
                     <div class="flex items-center gap-3 m-auto">
-                        <p class="shadow-md py-2 px-5 rounded-[20px] text-[15px]">I can design your website</p>
-                        <img src="/avatar3.svg" alt="Avatar" class="w-[80px] h-[80px] bg-white">
+                    <p class="shadow-md py-2 px-5 rounded-[20px] text-[15px]">I can design your website</p>
+                    <img src="/avatar3.svg" alt="Avatar" class="w-[80px] h-[80px] bg-white">
                     </div>
                     <div class="flex items-center gap-3 m-auto">
-                        <p class="shadow-md py-2 px-5 rounded-[20px] text-[15px]">I can help marketing strategy</p>
-                        <img src="/avatar4.svg" alt="Avatar" class="w-[80px] h-[80px] bg-white">
+                    <p class="shadow-md py-2 px-5 rounded-[20px] text-[15px]">I can help marketing strategy</p>
+                    <img src="/avatar4.svg" alt="Avatar" class="w-[80px] h-[80px] bg-white">
                     </div>
                 </div>
                 <button class="block bg-[#02897A] font-bold text-white text-[16px] px-5 py-3 rounded-[3px] z-20 w-fit m-auto mt-10">Contact our expert</button>
+
             </div>
 
             <div id="seventh_div" class="w-[90%] max-w-[1200px] m-auto mt-[200px]">
