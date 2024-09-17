@@ -104,6 +104,7 @@ p, h1, h2, h3, h4, h5, h6 {
   #menu {
     display: block;
   }
+
 }
 
 @media (max-width: 822px) {
@@ -160,12 +161,137 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 25px !important;
   }
 
-  #third_div h5, h6 {
-    text-align: justify !important;
+
+  #fifth_div > div {
+    order: 2;
+    margin-bottom: 100px !important;
+  }
+
+  #fifth_div > img {
+    order: 1;
+  }
+
+  #help {
+    grid-template-columns: 1fr !important;
+  }
+
+  #help1 {
+    order: 1;
+  }
+
+  #help2 {
+    order: 3;
+  }
+
+  #help3 {
+    order: 2;;
+  }
+
+  #help4 {
+    order: 4;
+  }
+
+  #ssd {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  #ed {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  #nd {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  #tenth_div {
+    flex-direction: column;
+  }
+
+  #tenth_div h3 {
+    text-align: center;
+  }
+
+  #tenth_div button {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
 
 }
 
+@media (max-width: 650px) {
+  #ssd {
+    grid-template-columns: 1fr !important;
+  }
+
+  #ed {
+    grid-template-columns: 1fr !important;
+  }
+
+  #nd {
+    grid-template-columns: 1fr !important;
+    margin-bottom: 230px;
+  }
+
+  #eigth_div {
+    margin-bottom: 270px !important;
+  }
+
+  #seventh_div {
+    width: 88% !important;
+    margin-top: 100px !important;
+  }
+
+  #eigth_div {
+    margin-top: 100px !important;
+  }
+
+  #ninth_div {
+    margin-top: 100px !important;
+  }
+
+  #seventh_div h3 {
+    text-align: center !important;
+  }
+
+  #tenth_div {
+    margin-top: 100px !important;
+  }
+
+  footer {
+    margin-top: 100px !important;
+  }
+
+  #seventh_div h5 {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 570px) {
+  #third_div > div {
+    width: 95% !important;
+    margin: auto;
+  }
+
+  #fourth_div > div {
+    width: 95% !important;
+    margin: auto;
+  }
+
+  #fifth_div > div {
+    width: 95% !important;
+    margin: auto;
+  }
+
+  #tdd > div {
+    gap: 5% !important;
+  }
+
+  #goal {
+    font-size: 20px;
+  }
+}
 
 @media (max-width: 460px) {
   #first_div h1 {
@@ -179,6 +305,24 @@ p, h1, h2, h3, h4, h5, h6 {
   #second_div > div {
     grid-template-columns: 1fr !important;
     margin-bottom: 60px;
+  }
+
+  h5 {
+    font-size: 16px !important;
+  }
+
+  h6 {
+    font-size: 25px !important;
+  }
+
+  button {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  #tenth_div {
+    padding: 20px 15px;
   }
 }
 
