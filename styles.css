@@ -2,212 +2,179 @@
   1. Use a more-intuitive box-sizing model.
 */
 *, *::before, *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: #22343D;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+#header-div {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
+#footer-div {
+  max-width: 1300px;
+  width: 100%;
+  margin: auto;
+}
+
+@media (max-width: 1248px) {
+  #first_div h1 {
+    font-size: 55px !important;
   }
-  
-  /*
-    2. Remove default margin
-  */
-  * {
-    margin: 0;
+
+  h3 {
+    font-size: 35px !important;
   }
-  
-  /*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-  */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    color: #22343D;
+
+  h4 {
+    font-size: 18px !important;
   }
-  
-  /*
-    5. Improve media defaults
-  */
-  img, picture, video, canvas, svg {
+}
+
+@media (max-width: 1122px) {
+  #first_div h1 {
+    font-size: 50px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #first_div h1 {
+    font-size: 45px !important;
+  }
+}
+
+@media (max-width: 935px) {
+  #first_div h1 {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 870px) {
+  #topbar {
+    display: none;
+  }
+
+  #menu {
     display: block;
-    max-width: 100%;
   }
-  
-  /*
-    6. Remove built-in form typography styles
-  */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /*
-    7. Avoid text overflows
-  */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /*
-    8. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
+}
+
+@media (max-width: 822px) {
+  #first_div {
+    grid-template-columns: 1fr !important;
   }
 
-  #header-div {
-    max-width: 1300px;
-    width: 100%;
+  #first_div > div {
+    order: 2 !important;
+  }
+
+  #first_div > img {
+    order: 1 !important;
+  }
+
+  #first_div h1, h2 {
+    text-align: center;
+  }
+
+  #fsd {
     margin: auto;
   }
 
-  #footer-div {
-    max-width: 1300px;
-    width: 100%;
-    margin: auto;
+  #second_div > div {
+    grid-template-columns: 1fr 1fr !important;
   }
 
-  
-  @media (max-width: 1316px) {
-    #bg1 {
-      bottom: -530px !important;
-    }
+  #second_div > div > div {
+    justify-content: center;
+    align-items: center;
   }
 
-  @media (max-width: 1278px) {
-    #bg1 {
-      bottom: -500px !important;
-    }
+  #second_div h5 {
+    text-align: center;
   }
 
-  @media (max-width: 1260px) {
-    #bg1 {
-      bottom: -470px !important;
-    }
+  #second_div > div {
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 460px) {
+  #first_div h1 {
+    font-size: 35px !important;
   }
 
-  @media (max-width: 1248px) {
-    #first_div h1 {
-      font-size: 55px !important;
-    };
-
-    h3 {
-      font-size: 35px !important;
-    }
-
-    h4 {
-      font-size: 18px !important;
-    }
+  h3 {
+    font-size: 30px !important;
   }
 
-  @media (max-width: 1220px) {
-    #bg1 {
-      bottom: -450px !important;
-    }
+  #second_div > div {
+    grid-template-columns: 1fr !important;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 382px) {
+  #fsd {
+    flex-direction: column !important;
   }
 
-  @media (max-width: 1190px) {
-    #bg1 {
-      bottom: -420px !important;
-    }
+  #fsd > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
   }
+}
 
-  @media (max-width: 1122px) {
-    #first_div h1 {
-      font-size: 50px !important;
-    };
-
+@media (max-width: 340px) {
+  #first_div h1 {
+    font-size: 30px !important;
   }
-
-  @media (max-width: 1024px) {
-    #first_div h1 {
-      font-size: 45px !important;
-    };
-  }
-
-  @media (max-width: 935px) {
-    #first_div h1 {
-      font-size: 40px !important;
-    };
-
-  }
-
-  @media (max-width: 870px) {
-    #topbar {
-      display: none;
-    }
-
-    #menu {
-      display: block;
-    }
-  }
-  
-  @media (max-width: 822px) {
-    #first_div {
-      grid-template-columns: 1fr !important;
-    };
-
-    #first_div > div {
-      order: 2 !important;
-    }
-
-    #first_div > img {
-      order: 1 !important;
-    }
-
-    #first_div h1, h2 {
-      text-align: center;
-    }
-
-    #fsd {
-      margin: auto;
-    }
-
-    #second_div > div {
-      grid-template-columns: 1fr 1fr !important;
-    }
-
-    #second_div > div > div {
-      justify-content: center;
-      align-items: center;
-    }
-
-    #second_div h5 {
-      text-align: center;
-    }
-
-    #second_div > div {
-      margin-top: 20px !important;
-    }
-  }
-
-  @media (max-width: 460px) {
-    #first_div h1 {
-      font-size: 35px !important;
-    };
-
-    h3 {
-      font-size: 30px !important;
-    }
-
-    #second_div > div {
-      grid-template-columns: 1fr !important;
-      margin-bottom: 60px;
-    }
-  }
-
-  @media (max-width: 382px) {
-    #fsd {
-      flex-direction: column !important;
-    }
-
-    #fsd > div {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 10px;
-    }
-  }
-
-  @media (max-width: 340px) {
-    #first_div h1 {
-      font-size: 30px !important;
-    };
-  }
+}
