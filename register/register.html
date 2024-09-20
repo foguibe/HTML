@@ -1,161 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Cash Complete</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-    </style>
-  </head>
-  <body
-    class="bg-[#F5F5F5] text-[#757575]"
-    style="font-family: Roboto; font-size: 16px"
-  >
+    <title>Document</title>
+</head>
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 14px;
+        color: #555555;
+        padding: 4px 0px;
+        
+    }
+    .shadow{
+        box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1) ;
+    }
+    td {
+  padding: 10px 0; 
+}
+select {
+       
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url('/assets/arrowdown.png'); 
+        background-repeat: no-repeat;
+        background-position: right 10px center; 
+        padding-right: 30px; 
+        border: 1px solid #d5d5d5;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    input[type="radio"] {
+        appearance: none; 
+        -webkit-appearance: none; 
+        width: 20px;
+        height: 20px;
+        border: 1px solid #d5d5d5;
+        border-radius: 50%; 
+        outline: none;
+        cursor: pointer;
+        
+    }
+    option{
+        color:black
+    }
+   
+</style>
+<body class="bg-[#f5f5f5] w-full flex flex-col h-full">
     <div
-      class="header flex justify-between items-center px-[10vw] py-[4px] bg-[#FFFFFF]"
-    >
-      <img src="logo.jpg" alt="" class="h-[47px]" />
-      <div
-        class="flex gap-[5px] items-center px-[13px] py-[4px] border-solid border-[#D5D5D5] border-[1px] rounded-lg"
-      >
-        <img src="cancel.jpg" alt="" class="w-[20px] h-[20px]" />
-        <a href="/index.html">Exit</a>
-      </div>
+      class="header flex justify-between items-center px-[10vw] py-[4px] bg-[#FFFFFF]">
+      <img src="assets/Logo.png" alt="" class="h-[47px]" />
+      <a href="/index.html"
+        class="flex gap-[5px] items-center px-[13px] py-[4px] border-solid border-[#D5D5D5] border-[1px] rounded-lg cursor-pointer block">
+        <img src="assets/closeButton.png" alt="" class="w-[20px] h-[20px]" />
+        <p>Exit</p>
+    </a>
     </div>
-    <div class="flex justify-center">
-      <div
-        class="grid md:grid-cols-[2fr_1fr] auto-rows-auto grid-cols-1 gap-8 my-8 px-[10vw] self-center"
-      >
-        <div class="bg-[#fff] rounded-[15px] p-[20px]">
-          <h2 class="font-[roboto] text-[26px] font-bold text-[#353535]">
-            Faculty Note Review
-          </h2>
-          <div class="flex gap-[10px] flex-wrap">
-            <p>Branch: <i class="font-light">Adeola Odeku Br.</i></p>
-            <img
-              src="blue-point.jpg"
-              alt=""
-              class="w-[8px] h-[8px] self-center"
-            />
-            <div class="flex flex-rows gap-[10px]">
-              <p>Category:</p>
-              <p
-                class="bg-[#D2EAFF] px-[5px] rounded-[10px] text-[#363F72] font-medium"
-              >
-                Unfit
-              </p>
-            </div>
-          </div>
-          <table class="mt-6 w-[100%]">
-            <tbody>
-              <tr
-                class="border-b-[#E5E5E5] border-b-[1px] border-t-[#E5E5E5] border-t-[1px]"
-              >
-                <td class="py-[8px]">
-                  Registration Date:
-                  <b class="text-[#353535]">Mon May 08 2022</b>
-                </td>
-              </tr>
-              <tr class="border-b-[#E5E5E5] border-b-[1px]">
-                <td class="py-[8px]">
-                  Amount: <b class="text-[#353535]">₦38,995,000</b>
-                </td>
-              </tr>
-              <tr class="border-b-[#E5E5E5] border-b-[1px]">
-                <td class="py-[8px]">
-                  Submitted By:
-                  <b
-                    class="bg-[#D2EAFF] px-[5px] rounded-[5px] text-[#363F72] font-bold"
-                    >B</b
-                  >
-                  <b class="text-[#353535]">Babalola Oluwatoyin</b>
-                </td>
-              </tr>
-              <tr class="border-b-[#E5E5E5] border-b-[1px]">
-                <td class="py-[8px]">
-                  Registration ID: <b class="text-[#353535]">#FNR-38093</b>
-                </td>
-              </tr>
-              <tr class="border-b-[#E5E5E5] border-b-[1px]">
-                <td class="py-[8px]">
-                  Currency: <b class="text-[#353535]">Nigerian Naira (NGN)</b>
-                </td>
-              </tr>
-              <tr class="border-b-[#E5E5E5] border-b-[1px]">
-                <td class="py-[8px]">
-                  Denomination: <b class="text-[#353535]">₦1000</b>
-                </td>
-              </tr>
-              <tr class="border-b-[#E5E5E5] border-b-[1px]">
-                <td class="py-[8px]">
-                  Pieces: <b class="text-[#353535]">100</b>
-                </td>
-              </tr>
-              <tr class="border-b-[#E5E5E5] border-b-[1px]">
-                <td class="py-[8px]">
-                  Order Status:
-                  <b
-                    class="bg-[#D2EAFF] px-[15px] py-[2px] rounded-[40px] text-[#055DAE] font-semibold"
-                    >APPROVED</b
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
+   
+    <div class=" flex-1 flex justify-center items-center">
+        <div class="bg-white pb-16  shadow flex  items-center flex-col gap-4 rounded-lg  w-[93%] max-w-[520px]  ">    
+            <h1 class="text-[#052B4E] self-start font-bold text-3xl pt-6 pl-6 ">Register Faulty Note</h1>
+                
+            
+            <table >
+                <tbody>
+                    <tr class="">
+                        <td class="text-right pr-5"><h2 class="font-bold">Category</h2></td>
+                        <td>
+                            <div class="flex  items-center gap-4">
+                                <div class="flex items-center gap-1">
+                                    <input type="radio" name="Category"  style="color:grey;" id="Unfit" class="w-5 h-5">
+                                <label for="Unfit">Unfit</label>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <input type="radio" name="Category" id="Mutilated" class="w-5 h-5">
+                                <label for="Mutilated">Mutilated</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- Currency Selection -->
+                        <td class="text-right pr-5"><h2 class="font-bold">Currency</h2></td>
+                        <td>
+                            <select name="" id="" class="outline-none border text-md text-[#d5d5d5] border-[#d5d5d5] max-w-[270px] px-4 py-2 rounded-md">
+                                <option value="" selected disabled >Select a Currency</option>
+                                <option value="usd" >United States Dollar(USD)</option>
+                                <option value="euro">Euro</option>
+                                <option value="jpy">Japanese Yen</option>
+                                <option value="bps">British Pound Sterling</option>
+                                <option value="cad">Canadian Dollar(USD)</option>    
+                            </select> 
+                        </td>
+                    </tr>
+                    <tr>
+                         <!-- Denominations -->
+                         <td class="text-right pr-5"><h2 class="font-bold">Denomination</h2> </td>
+                         <td>
+                             <select name="" id="" class="outline-none border text-md text-[#d5d5d5] border-[#d5d5d5] max-w-[270px] px-4 py-2 rounded-md">
+                                 <option value="" selected disabled style="color:grey;">Select a Denomination</option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="5">5</option>
+                                 <option value="10">10</option>
+                                 <option value="20">20</option>
+                                 <option value="50">50</option>
+                                 <option value="100">100</option>
+                             </select>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right pr-5"><h2 class="font-bold">Quantity</h2></td>
+                        <td>
+                            <div class="border border-[#d5d5d5] w-[270px] flex justify-between py-2 rounded-sm">
+                                <input type="text" class="outline-none  " placeholder="1" >
+                                <h5 class="border-l border-[#d5d5d5] text-[#555555] px-1  ">Pieces</h5>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="" >
+                        <td class="text-right pr-5"><h2 class="font-bold">Note</h2></td>
+                        <td>
+                            <textarea name="" id="" 
+                            placeholder="Any other information about your request?"
+                            class="outline-none px-5 pt-2 border text-sm border-[#d5d5d5] max-w-[270px] rounded-md min-h-28 "></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h2 class="font-bold text-right pr-5 ">Upload evidence <span class="block text-[#d5d5d5] text-sm">Accept only .jpg</span></h2>
+                        </td>
+                        <td>
+                            <div class="border border-[#d5d5d5] flex justify-between max-w-[270px] h-[38px] rounded-md items-center px-1">
+                                <p class="text-[#4F4F4F] pl-4">No file selected</p>
+                                <div>
+                                    <label for="file-selection"
+                                     class="inline-block font-bold bg-[#D2EAFF] text-[#0F3677] px-6 rounded-md py-[6px]  text-sm"
+                                      >Browse</label>
+                                    <input type="file" name="file-selection" id="file-selection" class="hidden " placeholder="">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
 
-          <div
-            class="bg-[#F5F5F5] rounded-[10px] mt-[20px] p-[15px] text-[#353535]"
-          >
-            <h3 class="mb-[10px]"><i class="font-light">REQUEST NOTE</i></h3>
-            <p>
-              We need to top up our cash reserves by Friday if we will have
-              enough cash to complete transactions and for the ATM on Monday.
-              Please approve ASAP.
-            </p>
-          </div>
+            <div class=" relative left-[98px]">
+                <button type="submit" class="bg-[#F5F5F5] text-[#0F3677] px-7 py-2 font-bold text-sm rounded-lg mr-3">Cancel</button>
+                <button type="submit" class="bg-[#055DAE] text-white px-7 py-2 font-bold text-sm rounded-lg">Submit</button>
+            </div>
+        
+        
+        
         </div>
-        <div class="bg-[#fff] rounded-[15px] p-[20px] self-start">
-          <h1 class="text-[#055DAE] text-[36px] text-center">₦38,995,000</h1>
-          <p class="text-[14px] text-center mb-6">Amount Requested</p>
-          <table class="w-[100%]">
-            <tr class="border-b-[#E5E5E5] border-b-[1px]">
-              <td class="text-[14px] font-extralight py-[8px]">
-                <i>Order Date</i>
-              </td>
-              <td class="text-right text-[#353535]">08 Mar, 2022</td>
-            </tr>
-            <tr class="border-b-[#E5E5E5] border-b-[1px]">
-              <td class="text-[14px] font-extralight py-[8px]">
-                <i>Delivery</i>
-              </td>
-              <td class="text-right text-[#353535]">12 Mar, 2022</td>
-            </tr>
-            <tr class="border-b-[#E5E5E5] border-b-[1px]">
-              <td class="text-[14px] font-extralight py-[8px]">
-                <i>Branch</i>
-              </td>
-              <td class="text-right text-[#353535]">Adeola Odeku</td>
-            </tr>
-            <tr class="border-b-[#E5E5E5] border-b-[1px]">
-              <td class="text-[14px] font-extralight py-[8px]"><i>By</i></td>
-              <td class="text-right text-[#353535]">Toyin Babalola</td>
-            </tr>
-            <tr>
-              <td class="text-[14px] font-extralight py-[8px]">
-                <i>Status</i>
-              </td>
-              <td class="text-right">
-                <b
-                  class="bg-[#D2EAFF] px-[15px] py-[2px] rounded-[40px] text-[#363F72] font-semibold"
-                  >PROCESSING</b
-                >
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
     </div>
-  </body>
+   
+</body>
 </html>
